@@ -75,9 +75,9 @@ yarn dev
 
 ### 7. Integration with IoT Hardware
 
-- This dashboard is designed to work with the Smart Beehive Monitoring System hardware. More on here [DASHBOARD PREVIEW.md](DASHBOARD-PREVIEW.md)
+- This dashboard is designed to work with the Smart Beehive Monitoring System hardware. 
 
-- See INTEGRATION.md for details on how to connect the dashboard to your beehive monitoring hardware.
+- More on here [DASHBOARD PREVIEW](DASHBOARD-PREVIEW.md)
 
 ### Deploy on Vercel
 
