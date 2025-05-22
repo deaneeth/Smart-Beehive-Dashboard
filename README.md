@@ -46,14 +46,9 @@ A web-based dashboard for monitoring and managing beehive data, including:
 - Leaflet Maps
 - React Gauge Charts
 
-## Learn More
+## IoT Hardware
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This dashboard works with the [Smart Beehive Monitoring System](https://github.com/deaneeth/Smart-Beehive-Monitor-System) hardware.
 
 ## Deploy on Vercel
 
