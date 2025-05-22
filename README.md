@@ -31,20 +31,20 @@
 - npm or yarn
 - Firebase account
 
-### Installation
+## Installation
 
-## 1. Clone the repository
+### 1. Clone the repository
 
 ```
 git clone https://github.com/deaneeth/Smart-Beehive-Monitor-System-Dashboard
 cd Smart-Beehive-Monitor-System-Dashboard
 ```
 
-## 2. IoT Hardware
+### 2. IoT Hardware
 
 This dashboard works with the [Smart Beehive Monitoring System](https://github.com/deaneeth/Smart-Beehive-Monitor-System) hardware.
 
-## 3. Install dependencies
+### 3. Install dependencies
 
 ```
 npm install
@@ -52,20 +52,20 @@ npm install
 yarn install
 ```
 
-## 4. Set up environment variables
+### 4. Set up environment variables
 
 ```
 cp .env.example .env.local
 ```
 
-## 5. Update 
+### 5. Update 
 
 ```
 .env.local
 ```
  with your Firebase configuration values
 
-## 6. Run the development server
+### 6. Run the development server
 
 ```
 npm run dev
@@ -73,13 +73,13 @@ npm run dev
 yarn dev
 ```
 
-## 7. Integration with IoT Hardware
+### 7. Integration with IoT Hardware
 
 - This dashboard is designed to work with the Smart Beehive Monitoring System hardware. More on here [DASHBOARD PREVIEW.md](DASHBOARD-PREVIEW.md)
 
 - See INTEGRATION.md for details on how to connect the dashboard to your beehive monitoring hardware.
 
-## Deploy on Vercel
+### Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
