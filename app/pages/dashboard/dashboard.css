@@ -1,0 +1,108 @@
+.dashboardcss{
+    display: flex;
+    gap: 10px;
+}
+
+.dashboardinfo{
+    margin-top: -30px;
+}
+
+.dashboardinfo h4{
+    color: #FFD34D;
+    margin-bottom: 0px;
+}
+
+.dashnotificationcontainer{
+    border: solid 1px #FFD34D;
+    width: 1120px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.productionstatus{
+    margin-top: -30px;
+}
+
+.productionstatus h4{
+    color: #FFD34D;
+    margin-bottom: 0px;
+}
+
+.productionstatuscontainer{
+    border: solid 1px #FFD34D;
+    width: 1120px;
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+.environmentalstatus{
+    margin-top: -30px;
+}
+
+.environmentalstatus h4{
+    color: #FFD34D;
+    margin-bottom: 0px;
+}
+
+.environmentalstatuscontainer{
+    border: solid 1px #FFD34D;
+    width: 1135px;
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+.mapstatus{
+    margin-top: -30px;
+}
+
+.mapstatus h4{
+    color: #FFD34D;
+    margin-bottom: 0px;
+}
+
+.mapstatuscontainer{
+    border: solid 1px #FFD34D;
+    width: 513px;
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+.bottomcontainer{
+    display: flex;
+    gap: 25px;
+}
+
+.systemstatuscontainer{
+    border: solid 1px #FFD34D;
+    width: 513px;
+    padding: 20px;
+    border-radius: 25px;
+    
+    gap: 20px;
+
+}
+
+.dashnotificationcontainer h5{
+    margin: 0px;
+    font-size: 15px;
+    color: #FFD34D;
+}
+
+.loading, .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.error {
+  color: #ff0000;
+}

@@ -1,0 +1,30 @@
+.systemcontainer {
+    background-color: #FFF2CC;
+    width: 510px;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 1px;
+    position: relative; /* Optional if needed */
+}
+
+.systemcontainer h4 {
+    all: unset;
+    color: white;
+    background-color: #E3751A;
+    padding: 8px 40px;
+    border-radius: 10px;
+    font-size: 40px; /* Reduced from 40px for better vertical fit */
+    display: inline-block;
+    margin-left: 6px;
+}
+
+.systemcontainer h3{
+    all: unset;
+    color: #E3751A;
+    margin-left: 10px;
+    font-size: 24px;
+    font-family: "RobottoB";
+}

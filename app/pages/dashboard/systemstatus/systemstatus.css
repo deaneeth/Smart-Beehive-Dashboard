@@ -1,0 +1,25 @@
+.dashboardcss{
+    display: flex;
+    gap: 10px;
+}
+
+.dashboardinfo{
+    margin-top: 0px;
+}
+
+.dashboardinfo h4{
+    margin-top: 0px;
+    color: #FFD34D;
+    margin-bottom: -10px;
+}
+
+.sysinside{
+    display: flex;
+    gap: 50px;
+}
+
+.sysallcontainer{
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}

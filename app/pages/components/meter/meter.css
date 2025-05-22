@@ -1,0 +1,31 @@
+.metercontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF2CC;
+  width: 320px;
+  padding: 1rem;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.metercss {
+  margin-bottom: 1rem;
+  margin-top: -25px;    
+  margin-bottom: -30px;
+}
+
+.meter-label {
+  font-weight: bold;
+  color: #fbbf24; /* amber-400 */
+  margin-bottom: 0.2rem;
+  font-size: 15px;
+  margin-bottom: -15px;
+}
+
+.meter-value {
+  font-size: 60px;
+  font-weight: bold;
+  color: #ea580c;
+}

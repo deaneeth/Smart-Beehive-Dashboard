@@ -1,0 +1,33 @@
+.valuecontainer {
+  background-color: #FFF2CC;
+  width: 90px;
+  border-radius: 15px;
+  display: flex;              
+  flex-direction: column;   
+  align-items: center;        
+  justify-content: center;    
+  text-align: center;        
+  padding: 1rem;            
+  gap: 0.5rem;               
+}
+
+.valuecontainer img {
+  background-color: #ea580c;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 4px;
+  width: 35px;
+}
+
+.valuecontainer h4{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.valuecontainer h3{
+    margin: 0px;
+    font-size: 40px;
+    margin-top: -20px;
+    color: #ea580c;
+}

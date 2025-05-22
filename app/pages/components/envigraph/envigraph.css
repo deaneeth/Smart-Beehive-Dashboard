@@ -1,0 +1,8 @@
+.chartContainer {
+  border-radius: 12px;
+  padding: 10px;
+  max-width: 500px;
+  font-family: sans-serif;
+  margin-left: -25px;
+  margin-top: 10px;
+}
