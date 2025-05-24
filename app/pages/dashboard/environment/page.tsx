@@ -68,9 +68,12 @@ const Environment = () => {
         const pressureArr: DataPoint[] = [];
         const tempArr: DataPoint[] = [];
 
-        Object.entries(data as FirebaseData).forEach(([date, entry]) => {
-          const avg = entry?.daily_average;
-          if (avg) {
+        // Type assertion for the data object
+        const typedData = data as { [key: string]: { daily_average: DailyAverage } };
+        
+        Object.entries(typedData).forEach(([date, entry]) => {
+          if (entry && entry.daily_average) {
+            const avg = entry.daily_average;
             humidityArr.push({ timestamp: date, value: avg.humidity });
             gasResArr.push({ timestamp: date, value: avg.gas_resistance });
             pressureArr.push({ timestamp: date, value: avg.pressure });
