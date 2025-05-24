@@ -8,16 +8,21 @@ import Graph from '../../components/envigraph/envigraph';
 import { database } from "../../../firebase-config/firebase";
 import { ref, onValue } from "firebase/database";
 
+interface DataPoint {
+  timestamp: string;
+  value: number;
+}
+
 const Environment = () => {
   const [gasResistance, setGasResistance] = useState(0);
   const [humidity, setHumidity] = useState(0);
   const [pressure, setPressure] = useState(0);
   const [temperature, setTemperature] = useState(0);
 
-  const [humidityHistory, setHumidityHistory] = useState([]);
-  const [gasResistanceHistory, setGasResistanceHistory] = useState([]);
-  const [pressureHistory, setPressureHistory] = useState([]);
-  const [temperatureHistory, setTemperatureHistory] = useState([]);
+  const [humidityHistory, setHumidityHistory] = useState<DataPoint[]>([]);
+  const [gasResistanceHistory, setGasResistanceHistory] = useState<DataPoint[]>([]);
+  const [pressureHistory, setPressureHistory] = useState<DataPoint[]>([]);
+  const [temperatureHistory, setTemperatureHistory] = useState<DataPoint[]>([]);
 
   const [uptime, setUptime] = useState(0);
   const [wifiStrength, setWifiStrength] = useState(0);
@@ -43,10 +48,10 @@ const Environment = () => {
     const unsubscribe = onValue(historyRef, (snapshot) => {
       const data = snapshot.val();
       if (data) {
-        const humidityArr = [];
-        const gasResArr = [];
-        const pressureArr = [];
-        const tempArr = [];
+        const humidityArr: DataPoint[] = [];
+        const gasResArr: DataPoint[] = [];
+        const pressureArr: DataPoint[] = [];
+        const tempArr: DataPoint[] = [];
 
         Object.entries(data).forEach(([date, entry]) => {
           const avg = entry?.daily_average;
