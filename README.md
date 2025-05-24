@@ -1,89 +1,100 @@
-# Smart Beehive Management Dashboard
+# 🐝 Smart Beehive Management Dashboard
 
-> Web interface for monitoring beehive data collected by the Smart Beehive Monitoring System.
+> 🖥️ Real-time web interface for monitoring beehive data collected by the [Smart Beehive Monitoring Dashboard](https://github.com/deaneeth/Smart-Beehive-Monitoring-Dashboard)
 
 <p align="center">
-  <img src="assets/dashboard-preview.png" alt="Dashboard Preview" width="800">
+  <img src="assets/dashboard-preview.png" alt="Dashboard Preview" width="850">
 </p>
 
-## Features
+<p align="center">
+  <a href="https://your-demo.vercel.app">
+    <img src="https://img.shields.io/badge/demo-live-brightgreen?style=for-the-badge" alt="Live Demo">
+  </a>
+  <a href="https://github.com/deaneeth/Smart-Beehive-Monitor-System">
+    <img src="https://img.shields.io/badge/hardware-repository-blue?style=for-the-badge" alt="Hardware Repo">
+  </a>
+</p>
 
-- Real-time beehive data visualization
-- Historical data analysis
-- Bee activity trends
-- Weight monitoring charts
-- Temperature and humidity tracking
-- Predator alert notifications
+## ✨ Features
 
-## Technologies Used
+- 📊 **Real-time Data Visualization** - Live updates of all hive metrics
+- 📈 **Historical Analysis** - Track trends and patterns over time
+- 🐝 **Bee Activity Monitoring** - Entrance/exit activity tracking
+- ⚖️ **Weight Monitoring** - Track honey production and hive health
+- 🌡️ **Environmental Tracking** - Temperature, humidity, and air quality
+- 🚨 **Alert System** - Instant notifications for predator detection
+- 🗺️ **GPS Location** - Track hive locations on interactive maps
+- 🔋 **Power Monitoring** - Solar panel and battery status
 
-- React
-- Firebase Realtime Database
-- Firebase Analytics
-- Leaflet Maps
-- React Gauge Charts
+## 🛠️ Technologies Used
 
-## Getting Started
+- **Frontend**: React, Next.js, TypeScript
+- **Database**: Firebase Realtime Database
+- **Maps**: Leaflet
+- **Charts**: React Gauge Charts, Recharts
+- **Styling**: Tailwind CSS
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (v14+)
+- Node.js (v14 or higher)
 - npm or yarn
 - Firebase account
+- [Smart Beehive Hardware](https://github.com/deaneeth/Smart-Beehive-Monitor-System) (optional for demo)
 
-## Installation
+### 📦 Installation
 
-### 1. Clone the repository
-
+1. **Clone the repository**
 ```
 git clone https://github.com/deaneeth/Smart-Beehive-Monitor-System-Dashboard
 cd Smart-Beehive-Monitor-System-Dashboard
 ```
 
-### 2. IoT Hardware
-
-This dashboard works with the [Smart Beehive Monitoring System](https://github.com/deaneeth/Smart-Beehive-Monitor-System) hardware.
-
-### 3. Install dependencies
-
+2. **Install dependencies**
 ```
 npm install
 # or
 yarn install
 ```
-
-### 4. Set up environment variables
-
+3. **Configure environment variables**
 ```
 cp .env.example .env.local
 ```
 
-### 5. Update 
-
+4. **Update .env.local with your Firebase configuration**
 ```
-.env.local
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
+NEXT_PUBLIC_FIREBASE_DATABASE_URL=your_database_url
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
 ```
- with your Firebase configuration values
 
-### 6. Run the development server
-
+5. **Run the development server**
 ```
 npm run dev
 # or
 yarn dev
 ```
 
-### 7. Integration with IoT Hardware
-
-- This dashboard is designed to work with the Smart Beehive Monitoring System hardware. 
-
-- More on here [DASHBOARD PREVIEW](DASHBOARD-PREVIEW.md)
-
-### Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+6. **Open http://localhost:3000 🎉**
 
 
-> This approach will give you a clean, professional organization for both components of your project while making it clear they're part of the same overall system.
+## 🔗 Integration with IoT Hardware
+This dashboard is designed to work seamlessly with the Smart Beehive Monitoring System:
+
+- ESP32-based monitoring system
+- Multiple sensor integration (BME680, HX711, TCRT5000, etc.)
+- Solar-powered operation
+- Real-time data transmission via Firebase
+
+For detailed setup instructions, see [DASHBOARD-PREVIEW.md](https://github.com/deaneeth/Smart-Beehive-Monitor-System-Dashboard/blob/main/DASHBOARD-PREVIEW.md)
+
+## 🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE] file for details.
+
+
+> Made with ❤️ for the beekeeping community
