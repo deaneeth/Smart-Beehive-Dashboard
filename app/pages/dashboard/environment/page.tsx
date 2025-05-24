@@ -13,6 +13,21 @@ interface DataPoint {
   value: number;
 }
 
+interface DailyAverage {
+  humidity: number;
+  gas_resistance: number;
+  pressure: number;
+  temp: number;
+}
+
+interface HistoryEntry {
+  daily_average: DailyAverage;
+}
+
+interface FirebaseData {
+  [key: string]: HistoryEntry;
+}
+
 const Environment = () => {
   const [gasResistance, setGasResistance] = useState(0);
   const [humidity, setHumidity] = useState(0);
@@ -53,7 +68,7 @@ const Environment = () => {
         const pressureArr: DataPoint[] = [];
         const tempArr: DataPoint[] = [];
 
-        Object.entries(data).forEach(([date, entry]) => {
+        Object.entries(data as FirebaseData).forEach(([date, entry]) => {
           const avg = entry?.daily_average;
           if (avg) {
             humidityArr.push({ timestamp: date, value: avg.humidity });
