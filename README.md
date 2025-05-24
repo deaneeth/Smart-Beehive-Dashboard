@@ -1,19 +1,19 @@
 # 🐝 Smart Beehive Management Dashboard
 
-> 🖥️ Real-time web interface for monitoring beehive data collected by the [Smart Beehive Monitoring Dashboard](https://github.com/deaneeth/Smart-Beehive-Monitoring-Dashboard)
+> 🖥️ Real-time web interface for monitoring beehive data collected by the [Smart-Beehive-Monitor](https://github.com/deaneeth/Smart-Beehive-Monitor) for data collection
 
 <p align="center">
   <img src="assets/dashboard-preview.png" alt="Dashboard Preview" width="850">
 </p>
 
-<p align="center">
+<p align="center" >
   <a href="https://your-demo.vercel.app">
     <img src="https://img.shields.io/badge/demo-live-brightgreen?style=for-the-badge" alt="Live Demo">
   </a>
   <a href="https://github.com/deaneeth/Smart-Beehive-Monitor-System">
     <img src="https://img.shields.io/badge/hardware-repository-blue?style=for-the-badge" alt="Hardware Repo">
   </a>
-</p>
+  </p>
 
 ## ✨ Features
 
